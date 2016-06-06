@@ -1,0 +1,16 @@
+<div id="index-wrap">
+    <div id="auth-heading">
+        <h2>Log in here!</h2>
+        <img src="/images/icons/user.svg" alt="user" id="login-icon-user">
+    </div>
+
+    <div class="panel-userauth">
+        {{#if error}} <span class="text-orange"><span class="glyphicon glyphicon-exclamation-sign"></span> {{error}}</span> {{/if}}
+        <form id="form-login" method="POST" novalidate>
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit" value="Login" class="user-submit">
+        </form>
+    </div>
+    </br><p class="text-center">New to Resma? Go ahead and <a href="/signin" class="inline-link">Get Started!</a></p>
+</div>

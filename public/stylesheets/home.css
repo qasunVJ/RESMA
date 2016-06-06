@@ -1,0 +1,59 @@
+.container{
+    padding-top: 20px;
+}
+
+.list-heading{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.panel #online-orders{
+    background: #96AF76;
+}
+
+.panel #onsite-orders{
+    background: #6D91A9;
+}
+
+.panel{
+    border: solid 1px #222;
+    border-radius: 5px;
+}
+
+.panel .panel-heading{
+    background-color: black;
+    border-bottom: none;
+    color: #999;
+}
+
+.panel .panel-body{
+    background: #333333;
+    border-top: dotted 2px black;
+    padding: 5px;
+}
+
+.panel-body .list-group-item{
+    background-color: #333333;
+    border: solid 1px #444444;
+    font-size: 12px;
+    padding: 10px 5px 10px 5px;
+    color: #eeeeee;
+}
+
+.panel-body .list-group-item:hover{
+    background-color: #222222;
+    color: #F79970;
+}
+
+.notif-info-big{
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    color: #555555;
+    background-color: #1a1a1a;
+    font-size: 55px;
+}
+

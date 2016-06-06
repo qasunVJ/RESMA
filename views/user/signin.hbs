@@ -1,0 +1,30 @@
+<div id="index-wrap">
+    <div class="margin-btm-20">
+        <div id="auth-heading">
+            <h2>Sign in here!</h2>
+            <img src="/images/icons/user.svg" alt="user" id="login-icon-user">
+        </div>
+
+        <div class="panel-userauth">
+            <form id="form-signin" method="POST" novalidate>
+                {{#if error}}<span class="text-orange"><span class="glyphicon glyphicon-exclamation-sign"></span> {{error.errors.name.message}}</span> {{/if}}
+                <input type="text" name="name" placeholder="Your Name" value="{{input.name}}" required>
+                {{#if error}}<span class="text-orange"><span class="glyphicon glyphicon-exclamation-sign"></span> {{error.errors.email.message}}</span> {{/if}}
+                <input type="email" name="email" placeholder="Email" value="{{input.email}}" required>
+                {{#if error}}<span class="text-orange"><span class="glyphicon glyphicon-exclamation-sign"></span> {{error.errors.usertype.message}}</span> {{/if}}
+                <select name="usertype" id="usertype" required>
+                    <option value="" disabled selected>User Type</option>
+                    <option value="Customer">Customer</option>
+                    <option value="Waiter">Waiter</option>
+                </select>
+                {{#if error}}<span class="text-orange"><span class="glyphicon glyphicon-exclamation-sign"></span> {{error.errors.phone.message}}</span> {{/if}}
+                <input type="text" name="phone" placeholder="Phone(eg. +94(0)#### ### ###" value="{{input.phone}}">
+                {{#if error}}<span class="text-orange"><span class="glyphicon glyphicon-exclamation-sign"></span> {{error.errors.password.message}}</span> {{/if}}
+                <input type="password" name="password" placeholder="Password" value="{{input.password}}" required>
+                <input type="password" name="confirm-password" placeholder="Confirm Password" required>
+                <input type="submit" value="Sign In" class="user-submit">
+            </form>
+        </div>
+        </br><p class="text-center">Already have an account? Go ahead and <a href="/login" class="inline-link">Login!</a></p>
+    </div>
+</div>
